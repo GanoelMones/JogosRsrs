@@ -44,6 +44,118 @@
             </div>
         </section>
 
+                <section id="pesquisa" class="section dark-section">
+            <div class="container">
+                <h2>Questionário de Pesquisa</h2>
+                <p>Ajude-nos a melhorar nosso conteúdo respondendo a algumas perguntas:</p>
+                
+                <form id="quiz-form" class="quiz-form">
+                    <div class="form-group">
+                        <label>1. Qual seu gênero de jogos favorito?</label>
+                        <select class="form-control" required>
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="acao">Ação/Aventura</option>
+                            <option value="rpg">RPG</option>
+                            <option value="fps">FPS (Tiro em primeira pessoa)</option>
+                            <option value="estrategia">Estratégia</option>
+                            <option value="esportes">Esportes</option>
+                            <option value="indie">Indie</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>2. Com que frequência você joga?</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="frequencia" value="diario" required> Diariamente</label>
+                            <label><input type="radio" name="frequencia" value="semanal"> Semanalmente</label>
+                            <label><input type="radio" name="frequencia" value="mensal"> Mensalmente</label>
+                            <label><input type="radio" name="frequencia" value="raro"> Raramente</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>3. Qual plataforma você mais utiliza?</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="plataforma" value="pc"> PC</label>
+                            <label><input type="checkbox" name="plataforma" value="ps5"> PlayStation 5</label>
+                            <label><input type="checkbox" name="plataforma" value="xbox"> Xbox Series X/S</label>
+                            <label><input type="checkbox" name="plataforma" value="switch"> Nintendo Switch</label>
+                            <label><input type="checkbox" name="plataforma" value="mobile"> Mobile</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>4. Quanto você costuma gastar em jogos por mês?</label>
+                        <input type="range" min="0" max="500" value="100" class="slider" id="gasto-range">
+                        <div class="range-values">
+                            <span>R$0</span>
+                            <span id="gasto-value">R$100</span>
+                            <span>R$500+</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>5. Qual recurso você mais valoriza em um jogo? (Marque até 3)</label>
+                        <div class="ranking-container">
+                            <div class="ranking-item">
+                                <span>História/Narrativa</span>
+                                <select class="ranking-select">
+                                    <option value="0">-</option>
+                                    <option value="1">1º</option>
+                                    <option value="2">2º</option>
+                                    <option value="3">3º</option>
+                                </select>
+                            </div>
+                            <div class="ranking-item">
+                                <span>Gráficos</span>
+                                <select class="ranking-select">
+                                    <option value="0">-</option>
+                                    <option value="1">1º</option>
+                                    <option value="2">2º</option>
+                                    <option value="3">3º</option>
+                                </select>
+                            </div>
+                            <div class="ranking-item">
+                                <span>Jogabilidade</span>
+                                <select class="ranking-select">
+                                    <option value="0">-</option>
+                                    <option value="1">1º</option>
+                                    <option value="2">2º</option>
+                                    <option value="3">3º</option>
+                                </select>
+                            </div>
+                            <div class="ranking-item">
+                                <span>Multiplayer</span>
+                                <select class="ranking-select">
+                                    <option value="0">-</option>
+                                    <option value="1">1º</option>
+                                    <option value="2">2º</option>
+                                    <option value="3">3º</option>
+                                </select>
+                            </div>
+                            <div class="ranking-item">
+                                <span>Inovação</span>
+                                <select class="ranking-select">
+                                    <option value="0">-</option>
+                                    <option value="1">1º</option>
+                                    <option value="2">2º</option>
+                                    <option value="3">3º</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>6. Deixe algum comentário ou sugestão:</label>
+                        <textarea rows="3" placeholder="O que você gostaria de ver mais no nosso site?"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Enviar Respostas</button>
+                </form>
+            </div>
+        </section>
+
         <section id="reviews" class="section">
             <div class="container">
                 <h2>Reviews Recentes</h2>
